@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/portofolio.css" />
+  </head>
+  <body>
+    <!--header-->
+    <header class=".global-header">
+      <!--logo-->
+      <a href="link-address">
+        <img
+          class="logo-global"
+          src="./images/webstudiologo.svg"
+          alt="webstudiologo"
+      /></a>
+      <!--navigatia-->
+      <nav>
+        <ul>
+          <li class="nav-first-item">
+            <a href="./index.html" class="visited">Studio</a>
+          </li>
+          <li class="nav-second-item">
+            <a href="./portofolio.html" class="active">Portofolio</a>
+          </li>
+          <li class="nav-third-item">
+            <a href="Contacts" class="visited">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+      <p class="external-link-header-mail">
+        <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+      </p>
+      <p class="external-link-header-phone">
+        <a href="tel:+4733378901">+1 212-772-4150</a>
+      </p>
+    </header>
+    <!--sfarsit header-->
+    <main class="portofolio-content">
+      <!--butoane filtre-->
+      <nav>
+        <ul class="portofolio-butons">
+          <li><button type="button" class="button">All</button></li>
+          <li><button type="button" class="button">Web-sites</button></li>
+          <li><button type="button" class="button">Apps</button></li>
+          <li><button type="button" class="button">Design</button></li>
+          <li><button type="button" class="button">Marketing</button></li>
+        </ul>
+      </nav>
+      <!--butoane filtre-->
+      <!--grid imagini portofolio-->
+      <section class="flex-grid">
+        <div class="proiect">
+          <img
+            src="./imagesportofolio/first.jpg"
+            width="370"
+            alt="Technoduck"
+          />
+          <p class="image-title">Technoduck</p>
+          <p class="image-description">Web-site</p>
+        </div>
+        <div>
+          <img
+            src="./imagesportofolio/second.jpg"
+            alt="Poster New Orlean vs Golden Star"
+            width="370"
+          />
+          <p class="image-title">Poster New Orlean vs Golden Star</p>
+          <p class="image-description">Design</p>
+        </div>
+        <div>
+          <img
+            src="./imagesportofolio/third.jpg"
+            alt="Seafood restaurant"
+            width="370"
+          />
+          <p class="image-title">Seafood Restaurant</p>
+          <p class="image-description">Apps</p>
+        </div>
+        <div>
+          <img
+            src="./imagesportofolio/fourth.jpg"
+            alt="Project Prime"
+            width="370"
+          />
+          <p class="image-title">Project Prime</p>
+          <p class="image-description">Marketing</p>
+        </div>
+        <div class="proiect">
+          <img
+            src="./imagesportofolio/five.jpg"
+            alt="Project Boxes"
+            width="370"
+          />
+          <p class="image-title">Project Boxes</p>
+          <p class="image-description">Apps</p>
+        </div>
+        <div class="proiect">
+          <img
+            src="./imagesportofolio/sixth.jpg"
+            alt="Inspiration has no Borders"
+            width="370"
+          />
+          <p class="image-title">Inspiration has no Borders</p>
+          <p class="image-description">Web-site</p>
+        </div>
+        <div>
+          <img
+            src="./imagesportofolio/seven.jpg"
+            alt="Limited Edition"
+            width="370"
+          />
+          <p class="image-title">Limited Edition</p>
+          <p class="image-description">Design</p>
+        </div>
+        <div>
+          <img
+            src="./imagesportofolio/eight.jpg"
+            alt="Project LAB"
+            width="370"
+          />
+          <p class="image-title">Project LAB</p>
+          <p class="image-description">Marketing</p>
+        </div>
+        <div>
+          <img
+            src="./imagesportofolio/nineth.jpg"
+            alt="Growing Business"
+            width="370"
+          />
+          <p class="image-title">Growing Business</p>
+          <p class="image-description">Apps</p>
+        </div>
+      </section>
+    </main>
+    <!--footer-->
+    <footer class="global-footer">
+      <a href="link-address"
+        ><img
+          class="logo-footer"
+          src="/images/webstudiologo.svg"
+          alt="webstudiologo"
+      /></a>
+      <address>
+        <ul class="footer-local-adress">
+          <li class="mail-local-adress">
+            <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+          <li class="local-adress">695 Park Ave, NY 10065, USA</li>
+          <li class="local-adress">+1 212-772-4150</li>
+        </ul>
+      </address>
+    </footer>
+  </body>
+</html>
