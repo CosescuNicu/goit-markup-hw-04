@@ -3,9 +3,9 @@
 body {
   position: relative;
   width: 1600px;
-  height: 2348px;
+  height: 2930px;
   background: #ffffff;
-  margin: 0;
+  margin: auto;
   padding: 0;
 }
 
@@ -220,7 +220,7 @@ ul {
 }
 
 .global-footer {
-  position: absolute;
+  position: relative;
   width: 1600px;
   height: 251px;
   top: 1628px;

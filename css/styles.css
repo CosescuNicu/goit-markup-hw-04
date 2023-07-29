@@ -3,7 +3,7 @@
 body {
   position: relative;
   width: 1600px;
-  height: 2348px;
+  height: 2930px;
   background: #ffffff;
   margin: auto;
   padding: 0;
@@ -51,6 +51,9 @@ ul {
   height: 80px;
   top: 0px;
   background-color: rgba(255, 255, 255, 1);
+}
+.container {
+
 }
 
 .logo-global {
@@ -149,7 +152,7 @@ ul {
   align-items: center;
   background-color: black;
 }
-  
+
 .first-title {
   color: rgba(255, 255, 255, 1);
   width: 696px;
@@ -197,14 +200,14 @@ ul {
   justify-content: space-between;
   flex-direction: column;
 }
-.goals-display{
+.goals-display {
   position: relative;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
 .goals-first-item {
-  display: flex; 
+  display: flex;
   flex-direction: column;
   justify-content: flex-start;
   width: 270px;
@@ -233,7 +236,7 @@ ul {
   letter-spacing: 0.42px;
 }
 .goals-second-item {
-  display: flex; 
+  display: flex;
   flex-direction: column;
   justify-content: flex-start;
   width: 270px;
@@ -264,7 +267,7 @@ ul {
   letter-spacing: 0.42px;
 }
 .goals-third-item {
-  display: flex; 
+  display: flex;
   flex-direction: column;
   justify-content: flex-start;
   width: 270px;
@@ -295,7 +298,7 @@ ul {
   letter-spacing: 0.42px;
 }
 .goals-fourth-item {
-  display: flex; 
+  display: flex;
   flex-direction: column;
   justify-content: flex-start;
   height: 16px;
@@ -421,11 +424,16 @@ ul {
 }
 
 .global-footer {
+  display: flex;
   position: absolute;
   width: 1600px;
   height: 251px;
   top: 2097px;
   background: #2f303a;
+}
+
+.adress-link-footer {
+  display: flex;
 }
 .logo-footer {
   margin-left: 215px;
@@ -462,4 +470,17 @@ ul {
 .local-adress {
   display: inline-block;
   margin: 5px;
+}
+.social-link-footer {
+  position: absolute;
+}
+.find-us-on {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
 }
