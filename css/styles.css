@@ -21,6 +21,12 @@ ul {
   margin: 0;
   padding: 0;
 }
+a:link {
+  text-decoration: none;
+}
+a:hover {
+  color: #2196f3;
+}
 .active {
   font-family: "Roboto";
   font-style: normal;
@@ -101,39 +107,65 @@ ul {
   line-height: 16px;
   letter-spacing: 0.02em;
 }
+
 .external-link-header-mail {
   position: absolute;
+  display: inline-flex;
+  align-items: center;
+  width: 161px;
+  height: 16px;
+  left: 1042px;
+  top: 32px;
+}
+.mail-header {
   width: 135px;
   height: 16px;
-  left: 1097px;
-  top: 24px;
-  font-family: "Roboto";
+  color: #2196f3;
+  font-family: Roboto;
+  font-size: 14px;
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-  color: #757575;
+  line-height: normal;
+  letter-spacing: 0.28px;
+  margin: 0;
 }
-.external-link-header-mail:hover {
-  color: #2196f3;
-  cursor: pointer;
+
+.envelop-icons {
+  width: 16px;
+  height: 12px;
+  flex-shrink: 0;
+}
+
+.envelop-icons:hover,
+.envelop-icons:focus {
+  fill: #2196f3;
 }
 .external-link-header-phone {
   position: absolute;
-  width: 113px;
-  height: 16px;
-  top: 24px;
-  right: 215px;
+  display: inline-flex;
+  align-items: center;
+  top: 32px;
   bottom: 32px;
-  left: 1272px;
-  font-family: "Roboto";
+  right: 225px;
+  margin: 0;
+}
+.phone-icons {
+  width: 10px;
+  height: 16px;
+  flex-shrink: 0;
+}
+.phone-icons:hover,
+.phone-icons:focus {
+  stroke: #2196f3;
+}
+.phone-header {
+  color: #757575;
+  font-family: Roboto;
+  font-size: 14px;
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-  color: #757575;
+  line-height: normal;
+  letter-spacing: 0.28px;
 }
 
 /*section hero*/
@@ -219,6 +251,11 @@ ul {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+}
+.goals-title {
+  margin: 0;
+  padding-top: 30px;
+  padding-bottom: 10px;
 }
 .goals-first-item {
   display: flex;
@@ -431,25 +468,37 @@ ul {
   letter-spacing: 0.03em;
   color: rgba(117, 117, 117, 1);
 }
-.memberteamicons {
+.member-teamicons {
   width: 206px;
   height: 44px;
   flex-shrink: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-radius: 2px solid red;
 }
-
-.icons-memberteam {
+.elipse {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+.icons-member-team {
   display: flex;
   justify-content: space-between;
   width: 20px;
   height: 20px;
   flex-shrink: 0;
 }
-.icons-memberteam:hover,
-.icons-memberteam:focus {
-  color: red;
+.elipse:hover,
+.elipse:focus {
+  background-color: #2196f3;
+}
+.icons-member-team:hover,
+.icons-member-team:focus {
+  stroke: #ffffff;
 }
 .regular-clients {
   display: flex;
@@ -495,15 +544,19 @@ ul {
   height: 60px;
   flex-shrink: 0;
 }
+.svg-clients:hover,
+.svg-clients:focus {
+  fill: #2196f3;
+}
 
 .global-footer {
-  display: flex;
   position: absolute;
   width: 1600px;
   height: 251px;
   top: 2679px;
   background: #2f303a;
   bottom: 0;
+  display: flex;
 }
 
 .adress-link-footer {
@@ -525,13 +578,22 @@ ul {
   letter-spacing: 0.03em;
   color: #2196f3;
 }
-
+.adress {
+  display: inline-flex;
+  width: 231px;
+  height: 72px;
+  flex-shrink: 0;
+}
 .footer-local-adress {
-  position: relative;
-  width: 207px;
-  height: 16px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  position: absolute;
+  width: 231px;
+  height: 72px;
+  top: 119px;
   left: 215px;
-  margin-right: 1154px;
+  right: 1154px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -540,15 +602,28 @@ ul {
   letter-spacing: 0.03em;
   color: #ffffff99;
 }
+.mail-local-adress {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.42px;
+}
 
-.local-adress {
-  display: inline-block;
-  margin: 5px;
-}
-.social-link-footer {
+.footer-social-link {
   position: absolute;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  top: 75px;
+  left: 516px;
+  width: 206px;
+  height: 80px;
 }
-.find-us-on {
+.footer-title {
+  margin: 0;
   color: #fff;
   font-family: Roboto;
   font-size: 14px;
@@ -557,4 +632,31 @@ ul {
   line-height: normal;
   letter-spacing: 0.42px;
   text-transform: uppercase;
+}
+
+.social-icon-footer {
+  display: flex;
+  column-gap: 10px;
+}
+
+.icon-footer {
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  row-gap: 10px;
+  border-radius: 50%;
+  background-color: grey;
+  cursor: pointer;
+}
+.social-icons {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+.icon-footer:hover,
+.icon-footer:focus {
+  background-color: #2196f3;
 }
