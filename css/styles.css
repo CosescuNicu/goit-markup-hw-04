@@ -120,7 +120,7 @@ a:hover {
 .mail-header {
   width: 135px;
   height: 16px;
-  color: #2196f3;
+  color: #757575;
   font-family: Roboto;
   font-size: 14px;
   font-style: normal;
@@ -221,6 +221,8 @@ a:hover {
 .first-button:focus {
   transform: scale(1.03);
 }
+/* section Features */
+
 .goals-items {
   display: flex;
   position: absolute;
@@ -378,6 +380,9 @@ a:hover {
   line-height: 24px;
   letter-spacing: 0.42px;
 }
+
+/* section What we do */
+
 .what-we-do {
   position: absolute;
   display: flex;
@@ -402,6 +407,9 @@ a:hover {
   letter-spacing: 0.03em;
   color: #212121;
 }
+
+/* section Team */
+
 .team {
   position: relative;
   display: flex;
@@ -475,8 +483,8 @@ a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-radius: 2px solid red;
 }
+
 .elipse {
   display: flex;
   align-items: center;
@@ -485,21 +493,23 @@ a:hover {
   height: 44px;
   border-radius: 50%;
 }
-.icons-member-team {
+.elipse:hover,
+.elipse:focus {
+  background-color: #2196f3;
+}
+.icon-member {
   display: flex;
   justify-content: space-between;
   width: 20px;
   height: 20px;
   flex-shrink: 0;
+  fill: #757575;
 }
-.elipse:hover,
-.elipse:focus {
-  background-color: #2196f3;
+
+.icon-member:hover {
+  fill: #ffffff;
 }
-.icons-member-team:hover,
-.icons-member-team:focus {
-  stroke: #ffffff;
-}
+
 .regular-clients {
   display: flex;
   flex-direction: column;
@@ -548,6 +558,7 @@ a:hover {
 .svg-clients:focus {
   fill: #2196f3;
 }
+/*--footer--*/
 
 .global-footer {
   position: absolute;
